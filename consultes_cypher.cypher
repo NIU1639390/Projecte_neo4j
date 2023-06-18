@@ -53,7 +53,7 @@ WHERE r.Relacio IN ["hijo", "hija","filla", "fill"] AND r2.Relacio = "cabeza"
 WITH count(p2) AS Num_fills, p, h
 WHERE Num_fills > 3 AND h.Municipi = "CR"
 RETURN p.name AS Nom, p.surname AS Cognom, p.second_surname AS Segon_Cognom, Num_fills
-ORDER BY Num_fills 
+ORDER BY Num_fills DESC
 LIMIT 20
 
 //12
